@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — OneShot</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0a0a;
+    --yellow: #f5c518;
+    --gray: #888;
+    --light: #f7f7f5;
+    --border: #e8e8e4;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--light);
+    color: var(--black);
+    line-height: 1.75;
+  }
+
+  header {
+    background: var(--black);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+    background: var(--yellow);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: var(--black);
+  }
+
+  .logo-text {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: -0.3px;
+  }
+
+  .hero {
+    background: var(--black);
+    padding: 60px 40px 70px;
+    border-bottom: 3px solid var(--yellow);
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 5vw, 56px);
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    color: var(--gray);
+    font-size: 15px;
+  }
+
+  .hero p span {
+    color: var(--yellow);
+    font-weight: 500;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+  }
+
+  section {
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: var(--black);
+  }
+
+  p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 14px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 14px 0 14px 20px;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    padding-left: 6px;
+  }
+
+  a {
+    color: var(--black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+  footer {
+    background: var(--black);
+    color: var(--gray);
+    text-align: center;
+    padding: 32px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    header, .hero { padding: 24px 20px; }
+    main { padding: 40px 20px 80px; }
+    .hero { padding-bottom: 50px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">O</div>
+  <span class="logo-text">OneShot</span>
+</header>
+
+<div class="hero">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: <span>April 9, 2026</span></p>
+</div>
+
+<main>
+
+  <section>
+    <div class="tag">Overview</div>
+    <h2>Our Commitment to Your Privacy</h2>
+    <p>OneShot ("we," "us," or "our") is operated by Manifestation Academy, Inc. We built OneShot to help creators automate short-form video processing and social media publishing. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+    <p>By using OneShot, you agree to the practices described in this policy. If you have questions, contact us at <a href="mailto:privacy@oneshotapp.com">privacy@oneshotapp.com</a>.</p>
+  </section>
+
+  <section>
+    <div class="tag">Data We Collect</div>
+    <h2>Information We Collect</h2>
+    <p>We collect the following categories of information when you use OneShot:</p>
+    <ul>
+      <li><strong>Account Information:</strong> Email address and authentication credentials when you sign in via Firebase Authentication.</li>
+      <li><strong>Video Content:</strong> Videos you upload for processing are temporarily stored on Cloudflare R2 and automatically deleted after 7 days.</li>
+      <li><strong>Social Media Credentials:</strong> OAuth tokens for connected social media accounts (Instagram, TikTok, YouTube, LinkedIn) used to publish content on your behalf via Zernio.</li>
+      <li><strong>Usage Data:</strong> Number of videos processed, ideas generated, and subscription status stored in Firebase Firestore.</li>
+      <li><strong>Content Profiles:</strong> Niche descriptions, audience information, and AI-generated content analysis you create within the app.</li>
+      <li><strong>Device Information:</strong> Device token for push notifications via Apple Push Notification service (APNs).</li>
+      <li><strong>Payment Information:</strong> Subscription and billing data processed by RevenueCat and Apple. We never see or store your credit card information.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="tag">How We Use It</div>
+    <h2>How We Use Your Information</h2>
+    <p>We use your information solely to provide and improve OneShot's services:</p>
+    <ul>
+      <li>Processing and publishing your videos to connected social media platforms</li>
+      <li>Generating AI-powered content ideas tailored to your niche using the Anthropic Claude API</li>
+      <li>Adding captions to your videos via AssemblyAI and ZapCap</li>
+      <li>Sending push notifications about your video processing status</li>
+      <li>Managing your subscription and enforcing usage limits</li>
+      <li>Improving app performance and troubleshooting issues</li>
+    </ul>
+    <p>We do not sell your personal information to third parties. We do not use your data for advertising purposes.</p>
+  </section>
+
+  <section>
+    <div class="tag">Third Parties</div>
+    <h2>Third-Party Services</h2>
+    <p>OneShot integrates with the following third-party services to deliver its functionality:</p>
+    <ul>
+      <li><strong>Firebase (Google):</strong> Authentication and database storage — <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a></li>
+      <li><strong>Cloudflare R2:</strong> Temporary video file storage — <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Privacy Policy</a></li>
+      <li><strong>Zernio:</strong> Social media publishing API</li>
+      <li><strong>AssemblyAI:</strong> Audio transcription for captions — <a href="https://www.assemblyai.com/legal/privacy-policy" target="_blank">Privacy Policy</a></li>
+      <li><strong>ZapCap:</strong> Automated caption generation</li>
+      <li><strong>Anthropic:</strong> AI content idea generation — <a href="https://www.anthropic.com/privacy" target="_blank">Privacy Policy</a></li>
+      <li><strong>RevenueCat:</strong> Subscription management — <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a></li>
+      <li><strong>Apple APNs:</strong> Push notifications</li>
+    </ul>
+    <p>Each third-party service has its own privacy policy governing how they handle data. We encourage you to review them.</p>
+  </section>
+
+  <section>
+    <div class="tag">Data Retention</div>
+    <h2>How Long We Keep Your Data</h2>
+    <ul>
+      <li><strong>Uploaded videos:</strong> Automatically deleted from Cloudflare R2 within 7 days of upload</li>
+      <li><strong>Published videos:</strong> Deleted from our servers immediately after successful publishing to social platforms</li>
+      <li><strong>Account data:</strong> Retained while your account is active. Deleted within 30 days of account deletion</li>
+      <li><strong>Content profiles and ideas:</strong> Retained until you delete them or close your account</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="tag">Your Rights</div>
+    <h2>Your Rights and Choices</h2>
+    <p>You have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+      <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
+      <li><strong>Correction:</strong> Update inaccurate information in your account</li>
+      <li><strong>Portability:</strong> Request an export of your content and data</li>
+      <li><strong>Opt-out:</strong> Disable push notifications at any time in your device settings</li>
+    </ul>
+    <p>To exercise any of these rights, email us at <a href="mailto:privacy@oneshotapp.com">privacy@oneshotapp.com</a>. We will respond within 30 days.</p>
+  </section>
+
+  <section>
+    <div class="tag">Security</div>
+    <h2>Security</h2>
+    <p>We implement industry-standard security measures including encrypted data transmission (TLS), Firebase security rules, and OAuth-based authentication. However, no method of transmission over the internet is 100% secure. We encourage you to use a strong, unique password and to notify us immediately of any suspected unauthorized access.</p>
+  </section>
+
+  <section>
+    <div class="tag">Children</div>
+    <h2>Children's Privacy</h2>
+    <p>OneShot is not directed at children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover we have collected data from a child under 13, we will delete it immediately. Contact us at <a href="mailto:privacy@oneshotapp.com">privacy@oneshotapp.com</a> if you believe we may have such information.</p>
+  </section>
+
+  <section>
+    <div class="tag">Changes</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes via push notification or email. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of OneShot after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <div class="tag">Contact</div>
+    <h2>Contact Us</h2>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+    <p><strong>Manifestation Academy, Inc.</strong><br>
+    Email: <a href="mailto:privacy@oneshotapp.com">privacy@oneshotapp.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Manifestation Academy, Inc. · OneShot · <a href="terms.html" style="color: #888;">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>
